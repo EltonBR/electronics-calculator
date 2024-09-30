@@ -1,7 +1,7 @@
 {
     "name": "Electronics Calculators",
     "short_name": "ElecCalc",
-    "start_url": "/",
+    "start_url": "/electronics-calculator",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#000000",
