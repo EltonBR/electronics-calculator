@@ -1,0 +1,16 @@
+{
+    "name": "Electronics Calculators",
+    "short_name": "ElecCalc",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#000000",
+    "icons": [
+      {
+        "src": "/assets/images/icon.png",
+        "sizes": "1024x1024",
+        "type": "image/png"
+      }
+    ]
+  }
+  
