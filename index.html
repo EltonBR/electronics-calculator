@@ -12,10 +12,7 @@
     </style>
     <title>Calculators</title>
     <link rel="stylesheet" href="./assets/css/pico.min.css">
-    <script>
-
-    </script>
-
+    <link rel="manifest" href="manifest.json">
 </head>
 
 <body>
@@ -59,7 +56,6 @@
                         <option value="M">M</option>
                     </select>
                     <div class="result dipole-result">
-
                     </div>
                     <footer>
                         <button type="submit">Calculate</button>
@@ -70,7 +66,6 @@
             <form onsubmit="event.preventDefault(); lowHighPassFilter(this)">
                 <article class="item-calculator">
                     <header>Passive High/Low pass filter</header>
-
 
                     <label>Resistor</label>
                     <fieldset role="group">
@@ -113,6 +108,7 @@
 
     </footer>
     <script src="main.js"></script>
+    <script src="pwa.js"></script>
 
 </body>
 
