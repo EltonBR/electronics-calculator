@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html data-theme="dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        .item-calculator {
+            /*max-width: 600px;*/
+            min-width: 300px;
+        }
+    </style>
+    <title>Calculators</title>
+    <link rel="stylesheet" href="./assets/css/pico.min.css">
+    <script>
+
+    </script>
+
+</head>
+
+<body>
+    <header style="background-color:#333; padding-left: 20px; align-items: center; display: flex;">
+        <h4 style="margin: 0px;">Calculadoras</h4>
+    </header>
+    <main class="container-fluid">
+        <div class="grid">
+
+            <form onsubmit="event.preventDefault(); groundPlane(this)">
+                <article class="item-calculator">
+                    <header>Ground Plane 1/4 Calculator</header>
+                    <label>Frequency (Mhz)</label>
+                    <input type="text" name="frequency">
+                    <label>Velocity Factor</label>
+                    <input type="text" name="velocityFactor" value="0.95">
+                    <label>Output Unity</label>
+                    <select name="outputUnity">
+                        <option value="MM">MM</option>
+                        <option value="CM">CM</option>
+                        <option value="M">M</option>
+                    </select>
+                    <div class="result ground-plane-result">
+                    </div>
+                    <footer>
+                        <button type="submit">Calculate</button>
+                    </footer>
+                </article>
+            </form>
+
+
+            <form onsubmit="event.preventDefault(); dipole(this)">
+                <article class="item-calculator">
+                    <header>Dipole 1/2 Calculator</header>
+                    <label>Frequency (Mhz)</label>
+                    <input type="text" name="frequency">
+                    <label>Output Unity</label>
+                    <select name="outputUnity">
+                        <option value="MM">MM</option>
+                        <option value="CM">CM</option>
+                        <option value="M">M</option>
+                    </select>
+                    <div class="result dipole-result">
+
+                    </div>
+                    <footer>
+                        <button type="submit">Calculate</button>
+                    </footer>
+                </article>
+            </form>
+
+            <form onsubmit="event.preventDefault(); lowHighPassFilter(this)">
+                <article class="item-calculator">
+                    <header>Passive High/Low pass filter</header>
+
+
+                    <label>Resistor</label>
+                    <fieldset role="group">
+                        <input type="number" name="resistance">
+                        <select name="resUnity">
+                            <option value="ohm">Ω</option>
+                            <option value="kohm">KΩ</option>
+                            <option value="mohm">MΩ</option>
+                        </select>
+                    </fieldset>
+
+                    <label>Capacitor</label>
+                    <fieldset role="group">
+                        <input type="number" name="capacitance">
+                        <select name="capUnity">
+                            <option value="pico">pF</option>
+                            <option value="nano">nF</option>
+                            <option value="micro">uF</option>
+                        </select>
+                    </fieldset>
+
+                    <label>Output Unity</label>
+                    <select name="outputUnity">
+                        <option value="MHZ">MHz</option>
+                        <option value="KHZ">KHz</option>
+                        <option value="HZ">Hz</option>
+                    </select>
+                    <div class="high-low-pass-filter-result">
+
+                    </div>
+                    <footer>
+                        <button type="submit">Calculate</button>
+                    </footer>
+                </article>
+            </form>
+
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
