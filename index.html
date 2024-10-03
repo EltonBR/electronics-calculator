@@ -102,6 +102,46 @@
                 </article>
             </form>
 
+            <form onsubmit="event.preventDefault(); LCTank(this)">
+                <article class="item-calculator">
+                    <header>LC tank ressonant frequency</header>
+
+                    <label>Inductor</label>
+                    <fieldset role="group">
+                        <input type="number" name="inductance">
+                        <select name="lUnity">
+                            <option value="p">pH</option>
+                            <option value="n" selected>nH</option>
+                            <option value="u">uH</option>
+                            <option value="m">mH</option>
+                        </select>
+                    </fieldset>
+
+                    <label>Capacitor</label>
+                    <fieldset role="group">
+                        <input type="number" name="capacitance">
+                        <select name="capUnity">
+                            <option value="p">pF</option>
+                            <option value="n">nF</option>
+                            <option value="u">uF</option>
+                        </select>
+                    </fieldset>
+
+                    <label>Output Unity</label>
+                    <select name="outputUnity">
+                        <option value="MHZ">MHz</option>
+                        <option value="KHZ">KHz</option>
+                        <option value="HZ">Hz</option>
+                    </select>
+                    <div class="lc-tank-freq-result">
+
+                    </div>
+                    <footer>
+                        <button type="submit">Calculate</button>
+                    </footer>
+                </article>
+            </form>
+
         </div>
     </main>
     <footer>
